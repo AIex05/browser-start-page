@@ -1,5 +1,5 @@
 const defaultConfig = {
-	username: "Excalith",
+	username: "Alex",
 	theme: {
 		backgroundColor: "#121317",
 		windowColor: "#1e212b",
@@ -112,7 +112,7 @@ const defaultConfig = {
 				links: [
 					{
 						name: "Portfolio",
-						url: "https://cancellek.com",
+						url: "https://alexzyt.com",
 						icon: "mdi:web"
 					},
 					{
@@ -121,8 +121,8 @@ const defaultConfig = {
 						icon: "fa-brands:keybase"
 					},
 					{
-						name: "GPT",
-						url: "https://chat.openai.com/",
+						name: "ChatGPT",
+						url: "https://chatgpt.alexzyt.com/",
 						icon: "simple-icons:openai"
 					},
 					{
