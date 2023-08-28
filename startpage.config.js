@@ -1,51 +1,52 @@
-const defaultConfig = {
-	username: "Alex",
-	theme: {
-		backgroundColor: "#121317",
-		windowColor: "#1e212b",
-		glowColor: "#6b5cb157",
-		white: "#e2e2e2",
-		gray: "#97989d",
-		black: "#16161e",
-		red: "#ec6183",
-		green: "#2ed8a2",
-		yellow: "#e8b195",
-		blue: "#2bc3de",
-		cyan: "#62e0e2",
-		magenta: "#e069aa",
-		violet: "#d1aff8",
-		orange: "#ff8800"
+const defaultConfig =
+{
+	"username": "AlexZ",
+	"theme": {
+		"backgroundColor": "#121317",
+		"windowColor": "#1e212b",
+		"glowColor": "#6b5cb157",
+		"white": "#e2e2e2",
+		"gray": "#97989d",
+		"black": "#16161e",
+		"red": "#ec6183",
+		"green": "#2ed8a2",
+		"yellow": "#e8b195",
+		"blue": "#2bc3de",
+		"cyan": "#62e0e2",
+		"magenta": "#e069aa",
+		"violet": "#d1aff8",
+		"orange": "#ff8800"
 	},
-	wallpaper: {
-		url: "",
-		easing: "ease-in-out",
-		fadeIn: true,
-		blur: true
+	"wallpaper": {
+		"url": "",
+		"easing": "ease-in-out",
+		"fadeIn": true,
+		"blur": true
 	},
-	terminal: {
-		fixedHeight: true,
-		windowGlow: true,
-		textGlow: false
+	"terminal": {
+		"fixedHeight": true,
+		"windowGlow": true,
+		"textGlow": false
 	},
-	prompt: {
-		ctrlC: true,
-		placeholder: "command...",
-		placeholderColor: "gray",
-		userColor: "green",
-		atColor: "gray",
-		hostColor: "magenta",
-		promptColor: "magenta",
-		promptSymbol: "❯",
-		caretColor: "green",
-		selectionBg: "yellow",
-		selectionFg: "black"
+	"prompt": {
+		"ctrlC": true,
+		"placeholder": "command...",
+		"placeholderColor": "gray",
+		"userColor": "green",
+		"atColor": "gray",
+		"hostColor": "magenta",
+		"promptColor": "magenta",
+		"promptSymbol": "❯",
+		"caretColor": "green",
+		"selectionBg": "yellow",
+		"selectionFg": "black"
 	},
-	fetch: {
-		timeFormat: "HH:mm",
-		dateFormat: "DD/MM/YYYY",
-		titleColor: "yellow",
-		image: "icon.svg",
-		data: [
+	"fetch": {
+		"timeFormat": "HH:mm",
+		"dateFormat": "DD/MM/YYYY",
+		"titleColor": "yellow",
+		"image": "icon.svg",
+		"data": [
 			"Time: {time}",
 			"Date: {date}",
 			"{seperator}",
@@ -56,214 +57,187 @@ const defaultConfig = {
 			"{colors}"
 		]
 	},
-	urlLaunch: {
-		target: "_self",
-		defaultColor: "white",
-		hoverColor: "violet"
+	"urlLaunch": {
+		"target": "_self",
+		"defaultColor": "white",
+		"hoverColor": "violet"
 	},
-	search: {
-		default: "https://google.com/search?q=",
-		target: "_self",
-		shortcutRegex: "([A-Za-z0-9]+) (.*)",
-		shortcuts: [
+	"search": {
+		"default": "https://google.com/search?q=",
+		"target": "_self",
+		"shortcutRegex": "([A-Za-z0-9]+) (.*)",
+		"shortcuts": [
 			{
-				alias: "g",
-				name: "Google Search",
-				url: "https://google.com/search?q={}"
+				"alias": "g",
+				"name": "Google Search",
+				"url": "https://google.com/search?q={}"
 			},
 			{
-				alias: "d",
-				name: "DuckDuckGo Search",
-				url: "https://duckduckgo.com/?q={}"
+				"alias": "y",
+				"name": "YouTube Search",
+				"url": "https://www.youtube.com/results?search_query={}"
 			},
 			{
-				alias: "b",
-				name: "Brave Search",
-				url: "https://search.brave.com/search?q={}"
+				"alias": "youtube",
+				"name": "YouTube Search",
+				"url": "https://www.youtube.com/results?search_query={}"
 			},
 			{
-				alias: "gh",
-				name: "Github Search",
-				url: "https://github.com/search?q={}"
+				"alias": "b",
+				"name": "Bilibili Search",
+				"url": "https://search.bilibili.com/all?keyword={}"
 			},
 			{
-				alias: "s",
-				name: "Stack Overflow Search",
-				url: "https://stackoverflow.com/search?q={}"
+				"alias": "gh",
+				"name": "Github Search",
+				"url": "https://github.com/search?q={}"
 			},
 			{
-				alias: "r",
-				name: "Subreddit Search",
-				url: "https://reddit.com/r/{}"
+				"alias": "s",
+				"name": "Stack Overflow Search",
+				"url": "https://stackoverflow.com/search?q={}"
 			},
 			{
-				alias: "w",
-				name: "Wikipedia Search",
-				url: "https://en.wikipedia.org/wiki/{}"
+				"alias": "r",
+				"name": "Subreddit Search",
+				"url": "https://reddit.com/r/{}"
+			},
+			{
+				"alias": "w",
+				"name": "Wikipedia Search",
+				"url": "https://en.wikipedia.org/wiki/{}"
+			},
+			{
+				"alias": "wiki",
+				"name": "Wikipedia Search",
+				"url": "https://en.wikipedia.org/wiki/{}"
 			}
 		]
 	},
-	sections: {
-		list: [
+	"sections": {
+		"list": [
 			{
-				title: "General",
-				color: "green",
-				align: "left",
-				links: [
+				"title": "General",
+				"color": "green",
+				"align": "left",
+				"links": [
 					{
-						name: "Portfolio",
-						url: "https://alexzyt.com",
-						icon: "mdi:web"
+						"name": "Portfolio",
+						"url": "http://alexzyt.com",
+						"icon": "mdi:account"
 					},
 					{
-						name: "Keybase",
-						url: "https://keybase.io/",
-						icon: "fa-brands:keybase"
+						"name": "ChatGPT",
+						"url": "http://chatgpt.alexzyt.com/",
+						"icon": "simple-icons:openai"
 					},
 					{
-						name: "ChatGPT",
-						url: "https://chatgpt.alexzyt.com/",
-						icon: "simple-icons:openai"
-					},
-					{
-						name: "OCI",
-						url: "https://www.oracle.com/cloud/",
-						icon: "simple-icons:oracle"
+						"name": "Starter Page",
+						"url": "https://www.oracle.com/cloud/",
+						"icon": "simple-icons:amazonaws"
 					}
 				]
 			},
 			{
-				title: "Dev",
-				color: "magenta",
-				align: "left",
-				links: [
+				"title": "Dev",
+				"color": "magenta",
+				"align": "left",
+				"links": [
 					{
-						name: "GitHub",
-						url: "https://github.com",
-						icon: "mdi:github"
+						"name": "GitHub",
+						"url": "https://github.com/AIex05?tab=repositories",
+						"icon": "mdi:github"
 					},
 					{
-						name: "GitLab",
-						url: "https://gitlab.com",
-						icon: "ph:gitlab-logo-simple-fill"
+						"name": "AWS s3",
+						"url": "https://s3.console.aws.amazon.com/s3/home?region=us-east-2#",
+						"icon": "simple-icons:amazonaws"
 					},
 					{
-						name: "Dev.to",
-						url: "https://dev.to",
-						icon: "material-symbols:logo-dev"
+						"name": "DigitalOcean",
+						"url": "https://cloud.digitalocean.com/projects/01cc9d1d-b1ef-4d17-8e1b-0fa6d7e793bf/resources?i=9ec9fd",
+						"icon": "simple-icons:digitalocean"
 					},
 					{
-						name: "Stack Overflow",
-						url: "https://stackoverflow.com/",
-						icon: "mdi:stack-overflow"
+						"name": "GoDaddy",
+						"url": "https://dashboard.godaddy.com/venture?ventureId=c08817a4-7ef7-4789-ba88-1cb49196b3fe",
+						"icon": "simple-icons:godaddy"
 					}
 				]
 			},
 			{
-				title: "Social",
-				color: "violet",
-				align: "left",
-				links: [
+				"title": "School",
+				"color": "violet",
+				"align": "left",
+				"links": [
 					{
-						name: "Twitter",
-						url: "https://twitter.com",
-						icon: "mdi:twitter"
+						"name": "USC Portal",
+						"url": "https://my.usc.edu/",
+						"icon": "simple-icons:scopus"
 					},
 					{
-						name: "Mastodon",
-						url: "https://mastodon.social/",
-						icon: "ri:mastodon-fill"
+						"name": "Blackboard",
+						"url": "https://blackboard.usc.edu/webapps/login/",
+						"icon": "mdi:human-male-board"
 					},
 					{
-						name: "Reddit",
-						url: "https://reddit.com",
-						icon: "mdi:reddit"
+						"name": "Piazza",
+						"url": "https://piazza.com/class/lllgy5k8hz932t/",
+						"icon": "mdi:school-outline"
 					},
 					{
-						name: "Polywork",
-						url: "https://polywork.com",
-						icon: "simple-icons:polywork"
+						"name": "Connect SC",
+						"url": "https://usc-csm.symplicity.com/students/?signin_tab=0",
+						"icon": "simple-icons:scopus"
+					},
+					{
+						"name": "Gmail",
+						"url": "https://mail.google.com/mail/u/1/#inbox",
+						"icon": "simple-icons:gmail"
 					}
 				]
 			},
 			{
-				title: "Gaming",
-				color: "cyan",
-				align: "left",
-				links: [
+				"title": "Entertainment",
+				"color": "cyan",
+				"align": "left",
+				"links": [
 					{
-						name: "Polygon",
-						url: "https://polygon.com",
-						icon: "uil:polygon"
+						"name": "Youtube",
+						"url": "https://youtube.com",
+						"icon": "simple-icons:youtube"
 					},
 					{
-						name: "IGN",
-						url: "https://ign.com",
-						icon: "mdi:currency-sign"
+						"name": "Bilibili",
+						"url": "https://www.bilibili.com/",
+						"icon": "simple-icons:bilibili"
 					},
 					{
-						name: "RPS",
-						url: "https://rockpapershotgun.com/",
-						icon: "ph:toilet-paper-bold"
-					},
-					{
-						name: "80lv",
-						url: "https://80.lv/",
-						icon: "tabler:hand-rock"
+						"name": "Reddit",
+						"url": "https://www.reddit.com/",
+						"icon": "mdi:reddit"
 					}
 				]
 			},
 			{
-				title: "Science",
-				color: "blue",
-				align: "left",
-				links: [
+				"title": "Job",
+				"color": "yellow",
+				"align": "left",
+				"links": [
 					{
-						name: "PopSci",
-						url: "https://popsci.com/",
-						icon: "material-symbols:science"
+						"name": "Strata Scratch",
+						"url": "https://platform.stratascratch.com/coding?code_type=1",
+						"icon": "mdi:cable-data"
 					},
 					{
-						name: "Space",
-						url: "fa6-solid:user-astronaut",
-						icon: "mdi:reddit"
+						"name": "Kaggle",
+						"url": "https://www.kaggle.com/",
+						"icon": "simple-icons:kaggle"
 					},
 					{
-						name: "NASA",
-						url: "https://blogs.nasa.gov/",
-						icon: "simple-icons:nasa"
-					},
-					{
-						name: "ESA",
-						url: "https://blogs.esa.int/",
-						icon: "mdi:black-mesa"
-					}
-				]
-			},
-			{
-				title: "Tech",
-				color: "yellow",
-				align: "left",
-				links: [
-					{
-						name: "TechCrunch",
-						url: "https://techcrunch.com/",
-						icon: "game-icons:techno-heart"
-					},
-					{
-						name: "Verge",
-						url: "https://www.theverge.com/",
-						icon: "arcticons:verge"
-					},
-					{
-						name: "It's Foss",
-						url: "https://itsfoss.com/",
-						icon: "ri:mastodon-fill"
-					},
-					{
-						name: "9To5 Linux",
-						url: "https://9to5linux.com/",
-						icon: "uil:linux"
+						"name": "Date Story Teller",
+						"url": "https://datastoryteller.gumroad.com/p/examples-of-data-analytics-projects",
+						"icon": "mdi:web"
 					}
 				]
 			}
